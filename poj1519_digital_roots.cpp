@@ -1,3 +1,5 @@
+//notice the number can contain more than 500 digits
+
 #include <stdio.h>
 #include <cstring>
 
