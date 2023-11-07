@@ -1,3 +1,3 @@
 # POJ
-record solving problems in PKU Online Judge
+record solving problems of PKU Online Judge
 
