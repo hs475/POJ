@@ -1,4 +1,4 @@
-//very special idea, I first thought sloving this problem with 1 / decimal which 
+//very special idea, I first thought solving this problem with 1 / decimal which 
 //can be troublesome.
 //2   remain 1/2
 //3   remain 1/6
