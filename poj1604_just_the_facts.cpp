@@ -1,3 +1,5 @@
+//notice we need to store at least last 4 numbers
+
 #include <stdio.h>
 
 const int N = 100000;
