@@ -1,3 +1,5 @@
+//It is like a race, a1, a2 take turns to add 1.
+
 #include <stdio.h>
 #include <math.h>
 
