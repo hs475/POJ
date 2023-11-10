@@ -45,7 +45,7 @@ void devide(int b1, int num) {
 void convertion() {
     int pos = 1000;
     memcpy(rest, in, sizeof(res));
-    res[0] = in[0];
+    memcpy(res, in, sizeof(res));
     while (!(res[0]==1000&&res[res[0]]==0)) {
         memset(res, 0, sizeof(res));
         devide(base1, base2);
