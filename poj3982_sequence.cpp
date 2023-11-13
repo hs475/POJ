@@ -42,6 +42,5 @@ int main() {
         }
         solve();
         memset(f, 0, sizeof(f));
-    }
-    
+    }  
 }
