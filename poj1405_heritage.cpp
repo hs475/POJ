@@ -15,7 +15,7 @@ int base = 1000, rest1[N], res[20][N] = {0};
 
 void mul(int base, int a) {
 	int tmp;
-    res[a][0] = 2 * res[a-1][0] - N;
+    	res[a][0] = 2 * res[a-1][0] - N;
 	for (int j=N-1; j>=res[a-1][0]; j--) {
 		for (int i=N-1; i>=res[a-1][0]; i--) {
 			res[a][i-N+1+j] += res[a-1][i] * res[a-1][j];
