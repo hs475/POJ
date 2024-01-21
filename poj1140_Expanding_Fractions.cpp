@@ -35,6 +35,5 @@ int main() {
         if (!a&&!b) break;
         else devide(a, b);
     }
-    
     return 0;
 }
