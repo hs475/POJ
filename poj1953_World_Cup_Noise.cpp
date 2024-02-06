@@ -1,27 +1,24 @@
+#include <cmath>
 #include <stdio.h>
 
-int f[2][45];
-
-void dp(int a, int n) {
-    for (int i=a+1; i<=n; ++i) {
-        f[1][i] = f[0][i-1];
-        f[0][i] = f[0][i-1] + f[1][i-1];
+void solve(int n) {
+    int k = (int(pow(n * 8 + 1, 0.5)) - 1) / 2;
+    printf("%d\n", k);
+    int tmp = n - ((k + 1) * k / 2);
+    printf("%d\n", tmp);
+    if (tmp!=0) {
+        if (k%2) printf("TERM %d IS %d/%d\n", n, tmp, k + 2 - tmp);
+        else printf("TERM %d IS %d/%d\n", n, k + 2 - tmp, tmp);
+    }
+    else {
+        if (k%2) printf("TERM %d IS %d/%d\n", n, 1, k);
+        else printf("TERM %d IS %d/%d\n", n, k, 1);
     }
 }
 
 int main() {
-    int a, n, num;
-    scanf("%d", &num);
-    a = 1;
-    f[0][a] = 1;
-    f[1][a] = 1;
-    for (int i=1; i<=num; ++i) {
-        scanf("%d", &n);
-        printf("Scenario #%d:\n", i);
-        if (n>a) {
-            dp(a, n);
-            a = n;
-        }
-        printf("%d\n\n", f[0][n] + f[1][n]);
+    int n;
+    while (scanf("%d", &n)!=EOF) {
+        solve(n);
     }
 }
