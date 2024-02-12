@@ -12,4 +12,8 @@ record solving problems of PKU Online Judge
 ## 最大公约数
 int gcd(int a, int b) {return b == 0 ? a : gcd(b, a % b);}
 
+## map
+num.clear();\
+num.insert(pair<int, int>(a, rest));
+num.find(a)!=num.end()
 
