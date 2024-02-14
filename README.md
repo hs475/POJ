@@ -17,3 +17,7 @@ num.clear();\
 num.insert(pair<int, int>(a, rest));\
 num.find(a)!=num.end()
 
+## Miller-Rabin素数判断
+![Uploading image.png…]()
+
+
