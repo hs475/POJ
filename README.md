@@ -18,7 +18,9 @@ num.insert(pair<int, int>(a, rest));\
 num.find(a)!=num.end()
 
 ## Miller-Rabin素数判断
-![image](https://github.com/hs475/POJ/assets/106378766/33d58d0c-d4a7-4028-a1e8-3cae5db754b6)
+![image](https://github.com/hs475/POJ/assets/106378766/33d58d0c-d4a7-4028-a1e8-3cae5db754b6)\
+在int范围内，选取 {2, 7, 61}三个数作为底数可以保证100%正确。\
+在long long范围内，选取{2,325,9375,28178,450775,9780504,1795265022}七个数作为底数可保证100%正确。\
 
 
 
