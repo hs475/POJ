@@ -14,6 +14,6 @@ int gcd(int a, int b) {return b == 0 ? a : gcd(b, a % b);}
 
 ## map
 num.clear();\
-num.insert(pair<int, int>(a, rest));
+num.insert(pair<int, int>(a, rest));\
 num.find(a)!=num.end()
 
