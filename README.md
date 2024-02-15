@@ -18,6 +18,7 @@ num.insert(pair<int, int>(a, rest));\
 num.find(a)!=num.end()
 
 ## Miller-Rabin素数判断
+
 write n − 1 as 2r·d with d odd by factoring powers of 2 from n − 1\
 WitnessLoop: repeat k times:\
    pick a random integer a in the range [2, n − 2]\
