@@ -18,7 +18,18 @@ num.insert(pair<int, int>(a, rest));\
 num.find(a)!=num.end()
 
 ## Miller-Rabin素数判断
-
+write n − 1 as 2r·d with d odd by factoring powers of 2 from n − 1\
+WitnessLoop: repeat k times:\
+   pick a random integer a in the range [2, n − 2]\
+   x ← ad mod n\
+   if x = 1 or x = n − 1 then\
+      continue WitnessLoop\
+   repeat r − 1 times:\
+      x ← x2 mod n\
+      if x = n − 1 then\
+         continue WitnessLoop\
+   return composite\
+return probably prime\
 在int范围内，选取 {2, 7, 61}三个数作为底数可以保证100%正确。\
 在long long范围内，选取{2,325,9375,28178,450775,9780504,1795265022}七个数作为底数可保证100%正确。\
 
