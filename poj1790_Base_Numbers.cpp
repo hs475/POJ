@@ -2,7 +2,8 @@
 #include <cstring>
 
 const int N = 50;
-int f[N], sum = 0, dp[N][N] = {0};
+int f[N];
+long long sum = 0, dp[N][N] = {0};
 char a[N];
 
 int compare(int a, int b, int c) {
@@ -15,7 +16,7 @@ int compare(int a, int b, int c) {
     return 0;
 }
 
-int count(int i, int c) {
+long long count(int i, int c) {
     if (i == f[0] - 1) sum++;
     for (int j = i; j >= f[0]; --j) {
         if (j != i && f[j] == 0) continue;
@@ -28,11 +29,10 @@ int count(int i, int c) {
     return sum;
 }
 
-int solve() {
-    int flag;
-    int res = 0;
+long long solve() {
+    long long res = 0;
     for (int j = N - 1; j > f[0]; --j) {
-        sum = 0, flag = 0;
+        sum = 0;
         if (j - 1 > f[0] && f[f[0]] == 0) continue;
         if (f[j]) res += count(j - 1, j);
     }
@@ -42,7 +42,7 @@ int solve() {
 
 int main() {
     while (scanf("%s", a)) {
-        int res;
+        long long res;
         memset(dp, 0, sizeof(dp));
         if (a[0] == '#') break;
         f[0] = N - strlen(a);
